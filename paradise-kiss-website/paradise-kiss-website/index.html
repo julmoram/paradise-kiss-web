@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paradise Kiss — Un Lookbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__top">
+      <span class="masthead__kicker">un atelier, una apuesta, una cuadra en Ebisu</span>
+      <span class="masthead__issue">N.º 01 — Lookbook</span>
+    </div>
+
+    <h1 class="masthead__title">
+      Paradise<span class="masthead__title-kiss">Kiss</span>
+    </h1>
+
+    <p class="masthead__tagline">
+      Una estudiante de diseño de moda, una chica que todavía no ha decidido
+      quién es, y la marca que construyen en el espacio entre la escuela y todo
+      lo que viene después.
+    </p>
+
+    <div class="masthead__tape" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <section class="intro" id="about">
+      <p class="intro__lede">
+        Cinco estudiantes de diseño llevan un atelier improvisado en una bodega
+        reconvertida, cosiendo una colección de graduación bajo una marca a la
+        que llamaron Paradise Kiss. Necesitan un rostro para representarla.
+        Yukari Hayasaka —agotada, indecisa y nada interesada— no está buscando
+        que la encuentren.
+      </p>
+    </section>
+
+    <div class="stitch-divider" aria-hidden="true"></div>
+
+    <section class="cast" id="cast">
+      <div class="cast__header">
+        <h2 class="cast__title">El Elenco</h2>
+        <div class="filters" role="group" aria-label="Filtrar elenco por grupo">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="atelier">Atelier</button>
+          <button class="filter" data-filter="academy">Academia</button>
+          <button class="filter" data-filter="supporting">Apoyo</button>
+        </div>
+      </div>
+
+      <div class="grid" id="cast-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Un lookbook hecho por fans, con fines de estudio — sin afiliación con Ai Yazawa ni con las editoriales de Paradise Kiss.</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__scrim" data-close></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+      <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+      <div class="modal__photo" id="modal-photo"></div>
+      <div class="modal__body">
+        <span class="modal__label" id="modal-category"></span>
+        <h3 class="modal__name" id="modal-name"></h3>
+        <p class="modal__title" id="modal-title"></p>
+        <p class="modal__bio" id="modal-bio"></p>
+        <p class="modal__quote" id="modal-quote"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
